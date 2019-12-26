@@ -31,7 +31,11 @@ class UserPosts extends React.Component {
           {this.state.posts.map((post, index) => {
             return post.userId.toString() ===
               this.props.match.params.userId.toString() ? (
-              <UserPost key={index} post={post} />
+              <UserPost
+                key={index}
+                post={post}
+                userId={this.props.match.params.userId.toString()}
+              />
             ) : (
               <div key={index}></div>
             );

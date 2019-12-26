@@ -1,8 +1,10 @@
 import React from "react";
 import "./UserPost.css";
 
+import { Link } from "react-router-dom";
 function UserPost(props) {
-  const { post } = props;
+  // const { post } = props.post;
+  // console.log("props in UserPost:", post);
   return (
     <div className="postBox">
       <img
@@ -10,9 +12,14 @@ function UserPost(props) {
         alt="postImg"
         className="postImg"
       />
-      <h4 className="postTitle">{post.title}</h4>
-      <p className="postContent">{post.body}</p>
+      <h4 className="postTitle">{props.post.title}</h4>
+      <p className="postContent">{props.post.body}</p>
       <p className="postDate">Dec 26, 2019</p>
+      <Link to={`/${props.userId}/${props.post.id}`}>
+        <button type="button" className="btn btn-primary btn-comments">
+          Comments
+        </button>
+      </Link>
     </div>
   );
 }
