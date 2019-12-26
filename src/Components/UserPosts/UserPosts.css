@@ -1,0 +1,10 @@
+.postsList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 80px;
+}
+.back-btn {
+  position: relative;
+  top: 30px;
+  left: 50px;
+}

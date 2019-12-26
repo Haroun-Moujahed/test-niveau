@@ -1,0 +1,14 @@
+.userCard {
+  border: 2px black solid;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  margin: 3%;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/101/241/non_2x/free-abstract-background-4-vector.jpg");
+}
+.userPhoto {
+  width: 200px;
+  height: 200px;
+}
